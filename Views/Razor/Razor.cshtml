@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Here Are Some Delicious Foods !.</h1>
+    @{
+        var FoodList = new List <string> {"apple pie","pizza","cinnamon rolls","lasagna","donuts","chocolat cacke","burritos"};
+            foreach (var item in FoodList) {
+                @if(item.StartsWith("c")) {
+                    <p style="color: red;">@item</p>
+                }
+                <p>@item</p>
+            }
+    }
+</body>
+</html>
